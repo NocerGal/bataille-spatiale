@@ -2,8 +2,8 @@ public static class FactorySoldiers
 {
     public static List<ISoldier> Create<T>(int numberOfSoldiers, int minAttackPower, int maxAttackPower, int minHp, int maxHp) where T : ISoldier
     {
-        var soldiers = new List<ISoldier>();
-        var random = new Random();
+        List<ISoldier> soldiers = new List<ISoldier>();
+        Random random = new();
 
         for (int i = 0; i < numberOfSoldiers; i++)
         {
