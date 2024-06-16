@@ -9,15 +9,7 @@ public static class FactorySoldiers
         {
             int attackPower = random.Next(minAttackPower, maxAttackPower);
             int hp = random.Next(minHp, maxHp);
-
-            if (typeof(T) == typeof(EmpireSoldier))
-            {
-                soldiers.Add(new EmpireSoldier(attackPower, hp));
-            }
-            else if (typeof(T) == typeof(RebelsSoldier))
-            {
-                soldiers.Add(new RebelsSoldier(attackPower, hp));
-            }
+            soldiers.Add(new Soldier(attackPower, hp));
         }
 
         return soldiers;
