@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("bataille")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3c3fc94a01521e073b2636015c60ef263a924434")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f6a0d3d7c03418dae92b5db8a2fc8b98e02a91b3")]
 [assembly: System.Reflection.AssemblyProductAttribute("bataille")]
 [assembly: System.Reflection.AssemblyTitleAttribute("bataille")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

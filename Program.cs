@@ -24,8 +24,8 @@ if (quantityBlueSoldiers <= 0 || quantityRedSoldiers <= 0)
 }
 
 // Initialisation de l'équipe bleue et de l'équipe rouge.
-Team blueTeam = FactoryTeam.Create<Soldier>(quantityBlueSoldiers, blueTeamName, minAttackPower, maxAttackPower, minHp, maxHp, blueBattleCry);
-Team redTeam = FactoryTeam.Create<Soldier>(quantityRedSoldiers, redTeamName, minAttackPower, maxAttackPower, minHp, maxHp, redBattleCry);
+Team blueTeam = FactoryTeam.Create(quantityBlueSoldiers, blueTeamName, minAttackPower, maxAttackPower, minHp, maxHp, blueBattleCry);
+Team redTeam = FactoryTeam.Create(quantityRedSoldiers, redTeamName, minAttackPower, maxAttackPower, minHp, maxHp, redBattleCry);
 
 // Définition d'une liste de soldats encore en vie dans chaque équipe.
 List<ISoldier> aliveSoldiersEmpire = blueTeam.Soldiers.Where(soldier => soldier.Hp > 0).ToList();
